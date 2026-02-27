@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+*.xcscmblueprint
+
+# User-local Xcode settings
+**/xcuserdata/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local artifacts
+output/
+tmp/
+models/
+*.data

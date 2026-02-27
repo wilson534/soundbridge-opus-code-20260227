@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F71BBCA0386AE446AFAB79A /* model_int8.onnx in Resources */ = {isa = PBXBuildFile; fileRef = C19FA90AEEB6CFF4F014DA99 /* model_int8.onnx */; };
+		1327B8E513EED15746472D13 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CF383545C1EB89DF3A1E00 /* DisplayView.swift */; };
+		160722D42F833184477C40FA /* SoundBridgePhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D099F8326EBE443470BDCF0 /* SoundBridgePhoneApp.swift */; };
+		1641C781653A95B982C0624C /* onnxruntime in Frameworks */ = {isa = PBXBuildFile; productRef = FA213AD509D3FF051A20FDB7 /* onnxruntime */; };
+		1D48D8D0993E138D332458C3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593A47883EDC50C008333D0 /* Message.swift */; };
+		2898E38370F2A45CEB41B22A /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = AB7ED32DF6955CF4D004CC3F /* MLX */; };
+		28B02CD50E3BFDA51276778F /* SoundBridgePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B8B567DE9513F7D0279E3 /* SoundBridgePadApp.swift */; };
+		2B3A1283202B3D065C5C3761 /* CleanerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02E42AD5CDB04DE0D12 /* CleanerService.swift */; };
+		317C8FB1430CBE27D34FEE98 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = B195E04608057B5F2A9728FD /* MLXLLM */; };
+		4997196AEA2C8D4204DAA456 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3E7AAB970451B98268E4AD /* SpeechService.swift */; };
+		5961F4693472479DC5F0A6EC /* MPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2352AE78D5F5DC82AF20662 /* MPCService.swift */; };
+		6F089858C53B6E460ED77638 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350714B544E9B88158D42B51 /* Constants.swift */; };
+		72B8476B44700A54AEBEDA7E /* qwen2.5-3b-4bit in Resources */ = {isa = PBXBuildFile; fileRef = E94E2BBC33DB2782E33263E0 /* qwen2.5-3b-4bit */; };
+		78EE522189501F5756B8DA46 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C402526A6C2548257EC589 /* SpeakerView.swift */; };
+		7E0F76DE30F8F819AEB22A24 /* PunctuationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E993773B0BCAE714CC630 /* PunctuationService.swift */; };
+		95B0644032372CD395BFF2E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350714B544E9B88158D42B51 /* Constants.swift */; };
+		99C4393B09ECCC3D39D1A612 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853D2C178FED74BB7F0BEB4E /* PairingView.swift */; };
+		BB4B00D88042426263AF75C4 /* MPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2352AE78D5F5DC82AF20662 /* MPCService.swift */; };
+		BC37B7853531D19A39925FEC /* punc_vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = 676E8D9137E0E94E385249B0 /* punc_vocab.json */; };
+		CAC60BBF67BE45E00BE714EE /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = C4799B95B08C1C3959534258 /* MLXLMCommon */; };
+		CB60448A4EC68E518E8D0672 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593A47883EDC50C008333D0 /* Message.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		350714B544E9B88158D42B51 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		457DDF9D73FB711390644686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4A4E8F0FC9582EB4F11106BB /* SoundBridge-iPhone.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "SoundBridge-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D099F8326EBE443470BDCF0 /* SoundBridgePhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBridgePhoneApp.swift; sourceTree = "<group>"; };
+		676E8D9137E0E94E385249B0 /* punc_vocab.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = punc_vocab.json; sourceTree = "<group>"; };
+		728B8B567DE9513F7D0279E3 /* SoundBridgePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBridgePadApp.swift; sourceTree = "<group>"; };
+		77061E6B76AFC58B488B6B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		82C402526A6C2548257EC589 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		853D2C178FED74BB7F0BEB4E /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		8593A47883EDC50C008333D0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8C3E7AAB970451B98268E4AD /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		A2352AE78D5F5DC82AF20662 /* MPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCService.swift; sourceTree = "<group>"; };
+		C19FA90AEEB6CFF4F014DA99 /* model_int8.onnx */ = {isa = PBXFileReference; path = model_int8.onnx; sourceTree = "<group>"; };
+		C4ADF02E42AD5CDB04DE0D12 /* CleanerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerService.swift; sourceTree = "<group>"; };
+		D7CF383545C1EB89DF3A1E00 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		E94E2BBC33DB2782E33263E0 /* qwen2.5-3b-4bit */ = {isa = PBXFileReference; path = "qwen2.5-3b-4bit"; sourceTree = "<group>"; };
+		F1B27E96CAE92BB3B8B3A819 /* SoundBridge-iPad.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "SoundBridge-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75E993773B0BCAE714CC630 /* PunctuationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctuationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B93E79B9B168642C135E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2898E38370F2A45CEB41B22A /* MLX in Frameworks */,
+				317C8FB1430CBE27D34FEE98 /* MLXLLM in Frameworks */,
+				CAC60BBF67BE45E00BE714EE /* MLXLMCommon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF8283A921182FD411FF5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1641C781653A95B982C0624C /* onnxruntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00DBD04B865A2B011D87DD9E = {
+			isa = PBXGroup;
+			children = (
+				151FB6CFFB2070901A31720D /* models */,
+				516AEC8DC60A76EC6CD1A974 /* Shared */,
+				EEFFB8678ECD3852DE2EC39C /* SoundBridge-iPad */,
+				B22ABC563C92399723CB78CD /* SoundBridge-iPhone */,
+				C7585AEC6465D89BA5530DEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0340BF4AC270F7BD60A5F9A6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A2352AE78D5F5DC82AF20662 /* MPCService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		151FB6CFFB2070901A31720D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C19FA90AEEB6CFF4F014DA99 /* model_int8.onnx */,
+				676E8D9137E0E94E385249B0 /* punc_vocab.json */,
+				E94E2BBC33DB2782E33263E0 /* qwen2.5-3b-4bit */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		516AEC8DC60A76EC6CD1A974 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9525D56256660491B30A75CA /* Models */,
+				0340BF4AC270F7BD60A5F9A6 /* Services */,
+				916E12561E2B13A67BEFCBC1 /* Utils */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7D0A6EEDD9D75D394958BA86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7CF383545C1EB89DF3A1E00 /* DisplayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8675E54341BB3B4D6E11BD43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				853D2C178FED74BB7F0BEB4E /* PairingView.swift */,
+				82C402526A6C2548257EC589 /* SpeakerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		916E12561E2B13A67BEFCBC1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				350714B544E9B88158D42B51 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9525D56256660491B30A75CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8593A47883EDC50C008333D0 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B22ABC563C92399723CB78CD /* SoundBridge-iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				457DDF9D73FB711390644686 /* Info.plist */,
+				4D099F8326EBE443470BDCF0 /* SoundBridgePhoneApp.swift */,
+				D64EEA1388041714AEC70001 /* Services */,
+				8675E54341BB3B4D6E11BD43 /* Views */,
+			);
+			path = "SoundBridge-iPhone";
+			sourceTree = "<group>";
+		};
+		C7585AEC6465D89BA5530DEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1B27E96CAE92BB3B8B3A819 /* SoundBridge-iPad.app */,
+				4A4E8F0FC9582EB4F11106BB /* SoundBridge-iPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D64EEA1388041714AEC70001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F75E993773B0BCAE714CC630 /* PunctuationService.swift */,
+				8C3E7AAB970451B98268E4AD /* SpeechService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E107B644AACD967256B79251 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF02E42AD5CDB04DE0D12 /* CleanerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEFFB8678ECD3852DE2EC39C /* SoundBridge-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				77061E6B76AFC58B488B6B37 /* Info.plist */,
+				728B8B567DE9513F7D0279E3 /* SoundBridgePadApp.swift */,
+				E107B644AACD967256B79251 /* Services */,
+				7D0A6EEDD9D75D394958BA86 /* Views */,
+			);
+			path = "SoundBridge-iPad";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66DC091E7166FE4D327D9AF2 /* SoundBridge-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B0C8D9260DF7031EBB07CB /* Build configuration list for PBXNativeTarget "SoundBridge-iPad" */;
+			buildPhases = (
+				CEEE4DC4BAF8B04BF43D527B /* Sources */,
+				A1FF0B082ED300560ED41ECB /* Resources */,
+				25B93E79B9B168642C135E7E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoundBridge-iPad";
+			packageProductDependencies = (
+				AB7ED32DF6955CF4D004CC3F /* MLX */,
+				B195E04608057B5F2A9728FD /* MLXLLM */,
+				C4799B95B08C1C3959534258 /* MLXLMCommon */,
+			);
+			productName = "SoundBridge-iPad";
+			productReference = F1B27E96CAE92BB3B8B3A819 /* SoundBridge-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C088D84F7BF7D4911D1C545C /* SoundBridge-iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B63EDC5E2E2DED7982B29B6 /* Build configuration list for PBXNativeTarget "SoundBridge-iPhone" */;
+			buildPhases = (
+				279674F51E6EB0ECF7D4FBED /* Sources */,
+				CE200ECD621A5F82A31497E0 /* Resources */,
+				8DF8283A921182FD411FF5E3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoundBridge-iPhone";
+			packageProductDependencies = (
+				FA213AD509D3FF051A20FDB7 /* onnxruntime */,
+			);
+			productName = "SoundBridge-iPhone";
+			productReference = 4A4E8F0FC9582EB4F11106BB /* SoundBridge-iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D74E06672D69B4BC9EFDF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					66DC091E7166FE4D327D9AF2 = {
+						DevelopmentTeam = 7Z4556KSRK;
+						ProvisioningStyle = Automatic;
+					};
+					C088D84F7BF7D4911D1C545C = {
+						DevelopmentTeam = 7Z4556KSRK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E0FC426544E3DAE96F5CB196 /* Build configuration list for PBXProject "SoundBridge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 00DBD04B865A2B011D87DD9E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6276B9777165348D695ADC9B /* XCRemoteSwiftPackageReference "mlx-swift" */,
+				DD81008588CDF2C0D62A1436 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+				FDEBCCB8C89726C07EE15E20 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66DC091E7166FE4D327D9AF2 /* SoundBridge-iPad */,
+				C088D84F7BF7D4911D1C545C /* SoundBridge-iPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1FF0B082ED300560ED41ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B8476B44700A54AEBEDA7E /* qwen2.5-3b-4bit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE200ECD621A5F82A31497E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F71BBCA0386AE446AFAB79A /* model_int8.onnx in Resources */,
+				BC37B7853531D19A39925FEC /* punc_vocab.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		279674F51E6EB0ECF7D4FBED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B0644032372CD395BFF2E9 /* Constants.swift in Sources */,
+				BB4B00D88042426263AF75C4 /* MPCService.swift in Sources */,
+				CB60448A4EC68E518E8D0672 /* Message.swift in Sources */,
+				99C4393B09ECCC3D39D1A612 /* PairingView.swift in Sources */,
+				7E0F76DE30F8F819AEB22A24 /* PunctuationService.swift in Sources */,
+				160722D42F833184477C40FA /* SoundBridgePhoneApp.swift in Sources */,
+				78EE522189501F5756B8DA46 /* SpeakerView.swift in Sources */,
+				4997196AEA2C8D4204DAA456 /* SpeechService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE4DC4BAF8B04BF43D527B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3A1283202B3D065C5C3761 /* CleanerService.swift in Sources */,
+				6F089858C53B6E460ED77638 /* Constants.swift in Sources */,
+				1327B8E513EED15746472D13 /* DisplayView.swift in Sources */,
+				5961F4693472479DC5F0A6EC /* MPCService.swift in Sources */,
+				1D48D8D0993E138D332458C3 /* Message.swift in Sources */,
+				28B02CD50E3BFDA51276778F /* SoundBridgePadApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		224DBD1C4386BBD466625D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Z4556KSRK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2AF3E4DE95285F3851C13C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Z4556KSRK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		318F4013591EA7DA7D40977A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "SoundBridge-iPhone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiweipeng.soundbridge.phone.codex7z;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C43A5F9F8E2F18C619809875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "SoundBridge-iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiweipeng.soundbridge.pad.codex7z;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D663433A5C86E73CB3399BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "SoundBridge-iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiweipeng.soundbridge.pad.codex7z;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		E895F122A4339CA565C3C1A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "SoundBridge-iPhone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiweipeng.soundbridge.phone.codex7z;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B63EDC5E2E2DED7982B29B6 /* Build configuration list for PBXNativeTarget "SoundBridge-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E895F122A4339CA565C3C1A4 /* Debug */,
+				318F4013591EA7DA7D40977A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A0B0C8D9260DF7031EBB07CB /* Build configuration list for PBXNativeTarget "SoundBridge-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43A5F9F8E2F18C619809875 /* Debug */,
+				D663433A5C86E73CB3399BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0FC426544E3DAE96F5CB196 /* Build configuration list for PBXProject "SoundBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF3E4DE95285F3851C13C16 /* Debug */,
+				224DBD1C4386BBD466625D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6276B9777165348D695ADC9B /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.30.6;
+			};
+		};
+		DD81008588CDF2C0D62A1436 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.30.6;
+			};
+		};
+		FDEBCCB8C89726C07EE15E20 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/onnxruntime-swift-package-manager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.19.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB7ED32DF6955CF4D004CC3F /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6276B9777165348D695ADC9B /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+		B195E04608057B5F2A9728FD /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD81008588CDF2C0D62A1436 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+		C4799B95B08C1C3959534258 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD81008588CDF2C0D62A1436 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		FA213AD509D3FF051A20FDB7 /* onnxruntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDEBCCB8C89726C07EE15E20 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */;
+			productName = onnxruntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E4D74E06672D69B4BC9EFDF9 /* Project object */;
+}

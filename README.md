@@ -50,7 +50,6 @@ xcodebuild -project SoundBridge.xcodeproj -scheme SoundBridge-iPad -destination 
 - `SoundBridge-iPhone/`：iPhone 应用源码
 - `SoundBridge-iPad/`：iPad 应用源码
 - `SoundBridge.xcodeproj/`：项目工程
-- `scripts/`：评测与辅助脚本
 - `project.yml`：XcodeGen 配置
 
 ## 未纳入仓库的本地大文件
